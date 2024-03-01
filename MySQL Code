@@ -102,7 +102,7 @@ WITH temp_table AS (
 )
 SELECT months,year, concat(round(sum(gross_sales)/1000000,2),"M") AS gross_sales FROM temp_table
 GROUP BY year,months
-ORDER BY year,month_number;
+ORDER BY year,months;
 
 
 #TASK 8
